@@ -1,0 +1,23 @@
+function SecHigh() {
+  return (
+    <fieldset className="content2">
+      <label style={{ '--_img': 'url(https://assets.codepen.io/2585/fiddle-leaf.jpeg)' }}>
+        <input type="radio" name="images" value="Fiddle Leaf" />
+      </label>
+      <label style={{ '--_img': 'url(https://assets.codepen.io/2585/pink-princess.jpeg)' }}>
+        <input type="radio" name="images" value="Pink Princess" />
+      </label>
+      <label style={{ '--_img': 'url(https://assets.codepen.io/2585/kara-eads-zcVArTF8Frs-unsplash.jpg)' }}>
+        <input type="radio" name="images" value="Monstera" defaultChecked />
+      </label>
+      <label style={{ '--_img': 'url(https://assets.codepen.io/2585/pothos.jpeg)' }}>
+        <input type="radio" name="images" value="Pothos" />
+      </label>
+      <label style={{ '--_img': 'url(https://assets.codepen.io/2585/rubber-tree.webp)' }}>
+        <input type="radio" name="images" value="Rubber Tree" />
+      </label>
+    </fieldset>
+  );
+}
+
+export default SecHigh;
