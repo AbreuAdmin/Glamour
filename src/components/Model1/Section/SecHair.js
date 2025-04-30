@@ -33,7 +33,7 @@ const SecHair = () => {
   ];
 
   return (
-    <section id="hair">
+    <section className="section1" id="hair">
       <h2>Cabelos</h2>
       <div className="card-container" data-count={products.length}>
         {products.map((product, index) => (

@@ -3,28 +3,6 @@ import { useEffect } from 'react';
 
 export default function AppScripts() {
   useEffect(() => {
-    // ===== Header Scroll =====
-    const header = document.querySelector('header');
-    let lastScrollPosition = 0;
-    const scrollThreshold = 300;
-
-    const onScroll = () => {
-      const currentScroll = window.pageYOffset;
-
-      if (currentScroll > scrollThreshold) {
-        header.style.transform =
-          currentScroll > lastScrollPosition
-            ? 'translateY(-100%)'
-            : 'translateY(0)';
-      } else {
-        header.style.transform = 'translateY(0)';
-      }
-
-      lastScrollPosition = currentScroll;
-    };
-
-    window.addEventListener('scroll', onScroll);
-
     // ===== Theme Toggle =====
     const themeContainer = document.getElementById('theme');
     if (themeContainer) {
@@ -46,16 +24,14 @@ export default function AppScripts() {
     // ===== Menu Mobile =====
     const openMenuBtn = document.getElementById('open-menu');
     const closeMenuBtn = document.getElementById('close-menu');
-    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenu = document.getElementById('menu');
 
     const openMenu = () => {
       mobileMenu?.classList.add('active');
-      document.body.classList.add('no-scroll');
     };
-
+    
     const closeMenu = () => {
       mobileMenu?.classList.remove('active');
-      document.body.classList.remove('no-scroll');
     };
 
     openMenuBtn?.addEventListener('click', openMenu);
@@ -67,39 +43,32 @@ export default function AppScripts() {
     });
 
     // ===== Slider =====
-    const track = document.querySelector('.slider-track');
-    const images = document.querySelectorAll('.slider-track img');
-    const prevBtn = document.getElementById('prev');
-    const nextBtn = document.getElementById('next');
+    const next = document.querySelector('.next');
+    const prev = document.querySelector('.prev');
 
-    let currentIndex = 0;
-
-    const updateSlide = () => {
-      if (track) {
-        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    const handleNext = () => {
+      const items = document.querySelectorAll('.item');
+      const slide = document.querySelector('.slide');
+      if (items.length > 0 && slide) {
+        slide.appendChild(items[0]);
       }
     };
 
-    const next = () => {
-      currentIndex = (currentIndex + 1) % images.length;
-      updateSlide();
+    const handlePrev = () => {
+      const items = document.querySelectorAll('.item');
+      const slide = document.querySelector('.slide');
+      if (items.length > 0 && slide) {
+        slide.prepend(items[items.length - 1]);
+      }
     };
 
-    const prev = () => {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      updateSlide();
-    };
-
-    nextBtn?.addEventListener('click', next);
-    prevBtn?.addEventListener('click', prev);
-
-    updateSlide();
+    next?.addEventListener('click', handleNext);
+    prev?.addEventListener('click', handlePrev);
 
     // Cleanup
     return () => {
-      window.removeEventListener('scroll', onScroll);
-      nextBtn?.removeEventListener('click', next);
-      prevBtn?.removeEventListener('click', prev);
+      next?.removeEventListener('click', handleNext);
+      prev?.removeEventListener('click', handlePrev);
       openMenuBtn?.removeEventListener('click', openMenu);
       closeMenuBtn?.removeEventListener('click', closeMenu);
       menuLinks.forEach((link) =>

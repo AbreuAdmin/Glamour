@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 export default function AppScripts() {
   useEffect(() => {
     // ===== Header Scroll =====
-    const header = document.querySelector('header');
+    const header = document.getElementById('header1');
     let lastScrollPosition = 0;
     const scrollThreshold = 300;
 

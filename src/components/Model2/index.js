@@ -3,15 +3,17 @@ import AppHeader from "./AppHeader";
 import AppMain from "./AppMain";
 import AppScript from "./AppScript";
 
-function Model1() {
+function Model2() {
   return (
     <>
-      <AppHeader />
-      <AppMain />
+      <div id="body2">
+        <AppHeader />
+        <AppMain />
+      </div>
       <AppFooter />
       <AppScript />
     </>
   );
 }
 
-export default Model1;
+export default Model2;

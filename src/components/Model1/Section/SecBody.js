@@ -69,7 +69,7 @@ const SecBody = () => {
   ];
 
   return (
-    <section id="body">
+    <section className="section1" id="body">
       <h2>Corpo</h2>
       <div className="card-container" data-count={products.length}>
         {products.map((product, index) => (

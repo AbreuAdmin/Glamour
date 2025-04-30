@@ -1,6 +1,6 @@
 function SecSlide() {
   return (
-    <section className="slide">
+    <section className="section1 slide">
       <div className="slider-track">
         <img src="https://res.cloudinary.com/drdm7dp02/image/upload/v1745241613/slide02_kcoxfr.jpg"
           alt="Produto 2" />

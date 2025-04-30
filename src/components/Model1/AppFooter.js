@@ -20,14 +20,14 @@ function AppFooter() {
                 <ul>
                     <li><a href="https://www.instagram.com/glamo.urcosmeticss/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon>Instagram</a></li>
                     <li><a href="https://www.tiktok.com/@glamouressency" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-tiktok"></ion-icon>TikTok</a></li>
-                    <li><a href="#https://www.facebook.com/glamouressency" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon>Facebook</a></li>
+                    <li><a href="https://www.facebook.com/glamouressency" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon>Facebook</a></li>
                 </ul>
             </nav>
             <nav id="navigation">
                 <ul>
                     <li><a href="/model1"><ion-icon className="icon" name="home"></ion-icon></a></li>
                     <li><a href="#highlights"><ion-icon name="heart"></ion-icon></a></li>
-                    <li><a href="https://wa.me/559193405570.com" target="_blank" rel="noopener noreferrer"><ion-icon name="chatbubbles"></ion-icon></a></li>
+                    <li><a href="https://wa.me/559193405570" target="_blank" rel="noopener noreferrer"><ion-icon name="chatbubbles"></ion-icon></a></li>
                     <li><a href="https://www.instagram.com/glamo.urcosmeticss/" target="_blank" rel="noopener noreferrer"><ion-icon className="icon" name="logo-instagram"></ion-icon></a></li>
                 </ul>
             </nav>

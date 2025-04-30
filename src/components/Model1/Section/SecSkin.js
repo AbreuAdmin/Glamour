@@ -63,7 +63,7 @@ const SecSkin = () => {
   ];
 
   return (
-    <section id="skincare">
+    <section className="section1" id="skincare">
       <h2>Skincare</h2>
       <div className="card-container" data-count={products.length}>
         {products.map((product, index) => (

@@ -57,7 +57,7 @@ const SecGloss = () => {
   ];
 
   return (
-    <section id="gloss">
+    <section className="section1" id="gloss">
       <h2>Gloss</h2>
       <div className="card-container" data-count={products.length}>
         {products.map((product, index) => (

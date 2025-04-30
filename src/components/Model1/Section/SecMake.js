@@ -94,7 +94,7 @@ const SecMake = () => {
   ];
 
   return (
-    <section id="make">
+    <section className="section1" id="make">
       <h2>Maqueagens</h2>
       <div className="card-container" data-count={products.length}>
         {products.map((product, index) => (

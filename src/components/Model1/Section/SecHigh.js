@@ -33,7 +33,7 @@ const SecHigh = () => {
   ];
 
   return (
-    <section id="highlights">
+    <section className="section1" id="highlights">
       <h2>Favoritos</h2>
       <div className="card-container" data-count={products.length}>
         {products.map((product, index) => (
