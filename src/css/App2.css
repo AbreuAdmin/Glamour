@@ -62,7 +62,7 @@
     align-items: center;
 
     ul {
-      display: flex;
+      display: inline-flex;
       justify-content: center;
       align-items: center;
       height: 100%;
@@ -951,7 +951,8 @@
     @layer demo2 {
       fieldset {
         label:has(input:checked) {
-          transform: scale(1.3);
+          transform: scale(1.5);
+          -webkit-tap-highlight-color: transparent;
         }
       }
     }

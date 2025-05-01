@@ -7,6 +7,7 @@ pre,header,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {

@@ -484,7 +484,6 @@
       background: transparent;
       height: fit-content;
       cursor: pointer;
-      -webkit-tap-highlight-color: transparent;
     }
 
     #open-menu {
@@ -498,7 +497,6 @@
       background: var(--header);
       color: var(--icon);
       cursor: pointer;
-      -webkit-tap-highlight-color: transparent;
     }
   }
 
