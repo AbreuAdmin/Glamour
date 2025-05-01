@@ -24,7 +24,7 @@
   background: var(--header2);
   flex-wrap: wrap;
   width: 100%;
-  min-height: 8vh;
+  height: 8vh;
   height: auto;
   padding: 0.8rem 3rem;
   align-items: center;
