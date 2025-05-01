@@ -102,18 +102,14 @@
     background: transparent;
     cursor: pointer;
   }
-
+  
   #theme button {
-    display: flex;
-    font-size: 2rem;
+    display: contents;
+    font-size: 2.3rem;
     border: none;
     background: transparent;
     color: var(--icon);
     cursor: pointer;
-  }
-
-  #theme button:hover {
-    transform: rotate(280deg);
   }
 
   #open-menu,
@@ -128,6 +124,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 2rem;
+  margin-bottom: 3rem;
   gap: 4rem;
   scrollbar-width: none;
 
@@ -794,7 +791,7 @@
         flex-direction: column;
         height: 100vh;
         width: 100%;
-        padding: 2rem 3rem;
+        padding: 5rem 3rem;
         align-items: start;
         gap: 1rem;
         flex-direction: column;
@@ -822,7 +819,7 @@
       font-size: 2.2rem;
       border: none;
       border-radius: 2rem;
-      padding: 0.3rem;
+      padding: 0.5rem;
       background: var(--header2);
       color: var(--icon);
       cursor: pointer;

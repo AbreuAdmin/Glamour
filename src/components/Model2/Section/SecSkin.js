@@ -64,7 +64,7 @@ const SecSkin = () => {
 
   return (
     <section id="skincare">
-      <h3>Gloss</h3>
+      <h3>Skincare</h3>
       <div className="carousel-container2">
         <div className="carousel-track2">
           {items.map((item, index) => (
