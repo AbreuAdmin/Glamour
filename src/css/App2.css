@@ -84,14 +84,13 @@
 
     #whatsapp {
       background: var(--whatsapp);
-      display: flex;
-      justify-content: center;
+      display: inline-flex;
       align-items: center;
       padding: 0.5rem 1rem;
       gap: 0.5rem;
       border-radius: 2rem;
     }
-
+    
     #whatsapp ion-icon {
       width: 1.5rem;
       height: 1.5rem;
