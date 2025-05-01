@@ -1,29 +1,59 @@
 const SecGloss = () => {
   const items = [
     {
-      tag: "Quente",
-      title: "Windbreaker Jacket",
-      img: "https://i.postimg.cc/2SNPfMqw/new-1.png",
-      description: "Accessory"
+      tag: "",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073526/G-A9_t5pyjt.jpg",
+      title: "Creme Hidratante A1",
+      description: "Hidratação profunda para todos os tipos de pele.",
     },
     {
-      tag: "Frio",
-      title: "Velvet Lip Gloss",
-      img: "https://i.postimg.cc/YqQZJ0rG/gloss-2.png",
-      description: "Makeup"
+      tag: "",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073522/G-A7_rbuzoo.jpg",
+      title: "Óleo de Massagem A4",
+      description: "Perfeito para momentos relaxantes e cuidados com a pele.",
     },
     {
-      tag: "Tendência",
-      title: "Shiny Lip Oil",
-      img: "https://i.postimg.cc/xjH0vR3J/gloss-3.png",
-      description: "Lançamento"
+      tag: "",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073521/G-A5_pfcmba.jpg",
+      title: "Sabonete Líquido A6",
+      description: "Limpeza suave com fragrância refrescante.",
     },
     {
       tag: "New",
-      title: "Hydrating Gloss",
-      img: "https://i.postimg.cc/zvZJb8bv/gloss-4.png",
-      description: "Brilho Natural"
-    }
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073518/G-A4_yy8jrh.jpg",
+      title: "Esfoliante Corporal A7",
+      description: "Remove impurezas e renova a pele.",
+    },
+    {
+      tag: "New",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073512/G-A3_osuih3.jpg",
+      title: "Hidratante Nutritivo A8",
+      description: "Com vitaminas essenciais para uma pele saudável.",
+    },
+    {
+      tag: "",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073509/G-A2_l4hyw9.jpg",
+      title: "Manteiga Corporal A9",
+      description: "Ultra hidratação para peles ressecadas.",
+    },
+    {
+      tag: "New",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073498/G-A1_jvv9hr.jpg",
+      title: "Gel Refrescante A10",
+      description: "Sensação de frescor imediato para a pele.",
+    },
+    {
+      tag: "",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073505/G-A13_nxd9xa.jpg",
+      title: "Loção Pós-Sol A12",
+      description: "Acalma e hidrata a pele após exposição solar.",
+    },
+    {
+      tag: "",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073507/G-A14_e1qvrw.jpg",
+      title: "Creme Antissinais A13",
+      description: "Ajuda a suavizar rugas e linhas de expressão.",
+    },
   ];
 
   return (

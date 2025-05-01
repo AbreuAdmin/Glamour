@@ -28,10 +28,12 @@ export default function AppScripts() {
 
     const openMenu = () => {
       mobileMenu?.classList.add('active');
+      document.body.classList.add('no-scroll');
     };
     
     const closeMenu = () => {
       mobileMenu?.classList.remove('active');
+      document.body.classList.remove('no-scroll');
     };
 
     openMenuBtn?.addEventListener('click', openMenu);

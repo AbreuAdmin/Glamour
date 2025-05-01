@@ -9,8 +9,8 @@ function SecSlide() {
           backgroundRepeat: "no-repeat"
         }}>
           <div className="content">
-            <div className="name">Switzerland</div>
-            <div className="description">Renowned for its breathtaking Alpine scenery and precision in craftsmanship</div>
+            <div className="name">Glamour Essence</div>
+            <div className="description">Beleza e bem-estar</div>
             <a className="link" href="https://www.instagram.com/glamo.urcosmeticss/" target="_blank" rel="noopener noreferrer">Ver mais</a>
           </div>
         </div>
@@ -22,8 +22,8 @@ function SecSlide() {
           backgroundRepeat: "no-repeat"
         }}>
           <div className="content">
-            <div className="name">Finland</div>
-            <div className="description">Known for its saunas, lakes, and a deep connection to nature</div>
+            <div className="name">Glamour Cosmetics</div>
+            <div className="description">O novo conceito de beleza feminina</div>
             <a className="link" href="https://www.instagram.com/glamo.urcosmeticss/" target="_blank" rel="noopener noreferrer">Ver mais</a>
           </div>
         </div>
@@ -35,8 +35,8 @@ function SecSlide() {
           backgroundRepeat: "no-repeat"
         }}>
           <div className="content">
-            <div className="name">India</div>
-            <div className="description">Famous for its rich culture, historical landmarks, natural beauty, and diverse cuisine</div>
+            <div className="name">Glamour Cosmetics</div>
+            <div className="description">O seu lugar de beleza e cuidados</div>
             <a className="link" href="https://www.instagram.com/glamo.urcosmeticss/" target="_blank" rel="noopener noreferrer">Ver mais</a>
           </div>
         </div>
@@ -48,8 +48,8 @@ function SecSlide() {
           backgroundRepeat: "no-repeat"
         }}>
           <div className="content">
-            <div className="name">Australia</div>
-            <div className="description">Distinguished by its diverse ecosystems, ranging from beaches to bushland</div>
+            <div className="name">Glamour Essence</div>
+            <div className="description">Conheça nossos produtos</div>
             <a className="link" href="https://www.instagram.com/glamo.urcosmeticss/" target="_blank" rel="noopener noreferrer">Ver mais</a>
           </div>
         </div>
