@@ -1,5 +1,5 @@
 const SecMake = () => {
-  const products = [
+  const items = [
     {
       img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073611/M-A1_e86ai0.jpg",
       title: "Iluminador Crystal Glow Linha Rosa Ruby Rose Radiant Pearl Radiant Pearl ",
@@ -36,6 +36,7 @@ const SecMake = () => {
       description: "O Bronzer Cremoso foi projetado para contorno fácil e natural, proporcionando um acabamento de longa duração com uma textura cremosa que se adapta à pele.",
     },
     {
+      tag: "Em Alta",
       img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073612/M-A11_qzqhty.jpg",
       title: "Blush líquido Febella",
       description: "O blush líquido é versátil, podendo ser usado nas bochechas, olhos e lábios. Sua fórmula proporciona um toque de cor natural e radiante, com alta pigmentação que permite construir camadas para intensificar o efeito desejado.",
@@ -62,6 +63,7 @@ const SecMake = () => {
       description: "O Jelly Tint é um produto 2 em 1, podendo ser usado tanto como blush quanto como lip tint. Sua textura em gel proporciona uma aplicação suave e um acabamento natural.",
     },
     {
+      tag: "Em Alta",
       img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073636/M-A20_iqso73.jpg",
       title: "Base líquida Soul Cosméticos",
       description: "Base líquida com alta cobertura, toque seco e natural, com textura suave e cremosa que garante um efeito aveludado sem deixar a pele oleosa ou pesada.",
@@ -74,18 +76,19 @@ const SecMake = () => {
   ];
 
   return (
-    <section className="section1" id="make">
-      <h2>Maqueagens</h2>
-      <div className="card-container" data-count={products.length}>
-        {products.map((product, index) => (
-          <div className="card" key={index}>
-            <img src={product.img} alt={product.title} />
-            <h3>{product.title}</h3>
-            <div className="description">
-              {product.description}
+    <section id="makes">
+      <h3>Maquiagem</h3>
+      <div className="carousel-container">
+        <div className="carousel-track">
+          {items.map((item, index) => (
+            <div className="card" key={index}>
+              <div className="tag">{item.tag}</div>
+              <img src={item.img} alt={item.title} className="img" />
+              <h4 className="title">{item.title}</h4>
+              <span className="description">{item.description}</span>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

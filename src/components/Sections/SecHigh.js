@@ -2,7 +2,7 @@ function SecHigh() {
   return (
     <>
       <h2 id="favorite">Favoritos</h2>
-      <fieldset className="content2">
+      <fieldset className="content">
         <label style={{ '--_img': 'url(https://res.cloudinary.com/drdm7dp02/image/upload/v1745073453/C-A8_sv4s7t.jpg)' }}>
           <input type="radio" name="images" value="Fiddle Leaf" />
         </label>

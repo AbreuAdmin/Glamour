@@ -1,6 +1,6 @@
 function SecSlide() {
   return (
-    <section className="container2">
+    <section className="container">
       <div className="slide">
         <div className="item" style={{
           background: "url('https://res.cloudinary.com/drdm7dp02/image/upload/v1745241613/slide02_kcoxfr.jpg')",

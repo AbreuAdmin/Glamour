@@ -1,6 +1,7 @@
 const SecBody = () => {
-  const products = [
+  const items = [
     {
+      tag: "Em Alta",
       img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073442/C-A1_eagpht.jpg",
       title: "Gel Hidratante Babasoul",
       description: "Hidratação profunda para todos os tipos de pele.",
@@ -53,18 +54,19 @@ const SecBody = () => {
   ];
 
   return (
-    <section className="section1" id="body">
-      <h2>Corpo</h2>
-      <div className="card-container" data-count={products.length}>
-        {products.map((product, index) => (
-          <div className="card" key={index}>
-            <img src={product.img} alt={product.title} />
-            <h3>{product.title}</h3>
-            <div className="description">
-              {product.description}
+    <section id="body">
+      <h3>Cuidados Corporais</h3>
+      <div className="carousel-container">
+        <div className="carousel-track">
+          {items.map((item, index) => (
+            <div className="card" key={index}>
+              <div className="tag">{item.tag}</div>
+              <img src={item.img} alt={item.title} className="img" />
+              <h4 className="title">{item.title}</h4>
+              <span className="description">{item.description}</span>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

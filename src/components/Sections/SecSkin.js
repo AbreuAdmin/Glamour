@@ -6,6 +6,7 @@ const SecSkin = () => {
       description: "Sérum Facial Bioativo Antiacne 10 em 1 + Sérum Primer Antioleosidade Oil-Free Dia. Séruns linha Studio da Max Love e podem ser usados antes da maquiagem, primer ou protetor solar.",
     },
     {
+      tag: "Em Alta",
       img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745181973/S-A4_drzjjb.jpg",
       title: "Sabonetes faciais em mousse Beautyloo",
       description: "Os sabonetes faciais em mousse são indicados para a limpeza diária da pele, removendo impurezas e maquiagem sem ressecar. A textura em mousse proporciona uma limpeza suave e eficaz, deixando a pele macia e revitalizada.",
@@ -60,8 +61,8 @@ const SecSkin = () => {
   return (
     <section id="skincare">
       <h3>Skincare</h3>
-      <div className="carousel-container2">
-        <div className="carousel-track2">
+      <div className="carousel-container">
+        <div className="carousel-track">
           {items.map((item, index) => (
             <div className="card" key={index}>
               <div className="tag">{item.tag}</div>

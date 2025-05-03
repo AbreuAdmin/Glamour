@@ -35,8 +35,8 @@ const SecHair = () => {
   return (
     <section id="hairs">
       <h3>Cabelos</h3>
-      <div className="carousel-container2">
-        <div className="carousel-track2">
+      <div className="carousel-container">
+        <div className="carousel-track">
           {items.map((item, index) => (
             <div className="card" key={index}>
               <div className="tag">{item.tag}</div>
