@@ -8,7 +8,7 @@ function AppHeader() {
       <nav id="menu">
         <ul>
           <button id="close-menu"><ion-icon name="close"></ion-icon></button>
-          <li><a href="/model2">HOME</a></li>
+          <li><a href="#home">HOME</a></li>
           <li><a href="#favorite">FAVORITOS</a></li>
           <li><a href="#body">CORPO</a></li>
           <li><a href="#gloss">GLOSS</a></li>
