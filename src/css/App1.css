@@ -272,23 +272,6 @@
     font-weight: 600;
   }
 
-  .card .volumes {
-    display: flex;
-    gap: 0.6em;
-    padding: 0 1rem;
-    padding-bottom: 10px;
-  }
-
-  .card .volumes span {
-    background: var(--header);
-    color: var(--icon);
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    left: 0;
-    cursor: pointer;
-  }
-
   .card .description {
     padding: 0 15px 15px;
     font-size: 1rem;
@@ -565,13 +548,6 @@
     .card h3 {
       font-size: 1.1rem;
       margin: 0.5rem 1rem 0;
-    }
-
-    .card .volumes {
-      padding: 0 1rem;
-      margin: 0.5rem 0;
-      gap: 0.5rem;
-      flex-wrap: wrap;
     }
 
     .card .description {

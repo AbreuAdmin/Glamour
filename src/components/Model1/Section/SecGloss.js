@@ -1,58 +1,44 @@
 const SecGloss = () => {
   const products = [
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073526/G-A9_t5pyjt.jpg",
-      title: "Creme Hidratante A1",
-      description: "Hidratação profunda para todos os tipos de pele.",
-      cor: "Rosa",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073526/G-A9_t5pyjt.jpg",
+      title: "Lip Gloss Babasoul Cheirinho de Chiclete",
+      description: "Este lip gloss garante lábios macios, nutridos e protegidos. Ele é enriquecido com Vitamina E e Manteiga de Karité, que ajudam a proteger os lábios contra danos causados pelos radicais livres e promovem a hidratação profunda.",
     },
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073522/G-A7_rbuzoo.jpg",
-      title: "Óleo de Massagem A4",
-      description: "Perfeito para momentos relaxantes e cuidados com a pele.",
-      cor: "Rosa",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073521/G-A5_pfcmba.jpg",
+      title: "Lip Gloss Labial Mágico Hidra Gloss Vivai - Acabamento Brilhante Tom Vermelho",
+      description: "Brilho Intenso e Acabamento Espelhado: Proporciona um brilho marcante que realça a beleza dos lábios. Hidratação Profunda: Mantém os lábios macios e protegidos contra o ressecamento.",
     },
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073521/G-A5_pfcmba.jpg",
-      title: "Sabonete Líquido A6",
-      description: "Limpeza suave com fragrância refrescante.",
-      cor: "Rosa",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073518/G-A4_yy8jrh.jpg",
+      title: "Lip Gloss Labial Mágico Hidra Gloss Vivai - Acabamento Brilhante Tom Candy Rose",
+      description: "Brilho Intenso e Acabamento Espelhado: Proporciona um brilho marcante que realça a beleza dos lábios. Hidratação Profunda: Mantém os lábios macios e protegidos contra o ressecamento.",
     },
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073518/G-A4_yy8jrh.jpg",
-      title: "Esfoliante Corporal A7",
-      description: "Remove impurezas e renova a pele.",
-      cor: "Rosa",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073512/G-A3_osuih3.jpg",
+      title: "Lip Gloss Labial Mágico Hidra Gloss Vivai - Acabamento Brilhante Tom Rosa Vermelho",
+      description: "Brilho Intenso e Acabamento Espelhado: Proporciona um brilho marcante que realça a beleza dos lábios. Hidratação Profunda: Mantém os lábios macios e protegidos contra o ressecamento.",
     },
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073512/G-A3_osuih3.jpg",
-      title: "Hidratante Nutritivo A8",
-      description: "Com vitaminas essenciais para uma pele saudável.",
-      cor: "Rosa",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073509/G-A2_l4hyw9.jpg",
+      title: "Lip Gloss Labial Mágico Hidra Gloss Vivai - Acabamento Brilhante Tom Nude Rosado",
+      description: "Brilho Intenso e Acabamento Espelhado: Proporciona um brilho marcante que realça a beleza dos lábios. Hidratação Profunda: Mantém os lábios macios e protegidos contra o ressecamento.",
     },
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073509/G-A2_l4hyw9.jpg",
-      title: "Manteiga Corporal A9",
-      description: "Ultra hidratação para peles ressecadas.",
-      cor: "Rosa",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073498/G-A1_jvv9hr.jpg",
+      title: "Lip Gloss Labial Mágico Hidra Gloss Vivai - Acabamento Brilhante Tom Rosa Claro",
+      description: "Brilho Intenso e Acabamento Espelhado: Proporciona um brilho marcante que realça a beleza dos lábios. Hidratação Profunda: Mantém os lábios macios e protegidos contra o ressecamento.",
     },
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073498/G-A1_jvv9hr.jpg",
-      title: "Gel Refrescante A10",
-      description: "Sensação de frescor imediato para a pele.",
-      cor: "Rosa",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073505/G-A13_nxd9xa.jpg",
+      title: "Gel Tint Tattoo Mia Make - Linha Gummy",
+      description: "Este produto combina a facilidade de aplicação de um gel com a fixação de um tint, proporcionando uma cor vibrante que dura o dia todo sem retoques.",
     },
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073505/G-A13_nxd9xa.jpg",
-      title: "Loção Pós-Sol A12",
-      description: "Acalma e hidrata a pele após exposição solar.",
-      cor: "Rosa",
-    },
-    {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073507/G-A14_e1qvrw.jpg",
-      title: "Creme Antissinais A13",
-      description: "Ajuda a suavizar rugas e linhas de expressão.",
-      cor: "Rosa",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073507/G-A14_e1qvrw.jpg",
+      title: "Gloss Labial Volumoso da Max Love",
+      description: "Auxilia no aumento do volume dos lábios, hidrata e protege a pele. Contém ácido hialurônico, vitamina E e D-pantenol.",
     },
   ];
 
@@ -62,11 +48,8 @@ const SecGloss = () => {
       <div className="card-container" data-count={products.length}>
         {products.map((product, index) => (
           <div className="card" key={index}>
-            <img src={product.image} alt={product.title} />
+            <img src={product.img} alt={product.title} />
             <h3>{product.title}</h3>
-            <div className="volumes">
-              <span>{product.cor}</span>
-            </div>
             <div className="description">
               {product.description}
             </div>

@@ -1,34 +1,29 @@
 const SecHigh = () => {
   const products = [
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073453/C-A8_sv4s7t.jpg",
-      title: "Hidratante Nutritivo A8",
-      description: "Com vitaminas essenciais para uma pele saudável.",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073526/G-A9_t5pyjt.jpg",
+      title: "Lip Gloss Babasoul Cheirinho de Chiclete",
+      description: "Este lip gloss garante lábios macios, nutridos e protegidos. Ele é enriquecido com Vitamina E e Manteiga de Karité, que ajudam a proteger os lábios contra danos causados pelos radicais livres e promovem a hidratação profunda.",
     },
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073507/G-A14_e1qvrw.jpg",
-      title: "Creme Antissinais A13",
-      description: "Ajuda a suavizar rugas e linhas de expressão.",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073636/M-A20_iqso73.jpg",
+      title: "Base líquida Soul Cosméticos",
+      description: "Base líquida com alta cobertura, toque seco e natural, com textura suave e cremosa que garante um efeito aveludado sem deixar a pele oleosa ou pesada.",
     },
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073598/H-A1_y8yi8a.jpg",
-      title: "Creme Hidratante A1",
-      description: "Hidratação profunda para todos os tipos de pele.",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073612/M-A11_qzqhty.jpg",
+      title: "Blush líquido Febella",
+      description: "O blush líquido é versátil, podendo ser usado nas bochechas, olhos e lábios. Sua fórmula proporciona um toque de cor natural e radiante, com alta pigmentação que permite construir camadas para intensificar o efeito desejado.",
     },
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745181698/H-A7_tztcly.jpg",
-      title: "Manteiga Corporal A9",
-      description: "Ultra hidratação para peles ressecadas.",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073800/S-A12_nnbh91.jpg",
+      title: "Mousse Micelar Cheirinho de Chiclete Babasoul Uva - Soul Cosméticos",
+      description: "Espuma de limpeza facial com ação demaquilante que promete limpar profundamente, purificar, nutrir e tonificar a pele, deixando um toque de hidratação e um cheiro agradável de chiclete",
     },
     {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073612/M-A11_qzqhty.jpg",
-      title: "Creme Antissinais A13",
-      description: "Ajuda a suavizar rugas e linhas de expressão.",
-    },
-    {
-      image: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745073636/M-A20_iqso73.jpg",
-      title: "Creme Antissinais A13",
-      description: "Ajuda a suavizar rugas e linhas de expressão.",
+      img: "https://res.cloudinary.com/drdm7dp02/image/upload/v1745181441/C-A4_pfzesn.jpg",
+      title: "Body Splash - Desodorante Colônia Destinée",
+      description: "Este produto é ideal para quem busca uma fragrância sofisticada e envolvente, deixando a pele com um perfume marcante e duradouro.",
     },
   ];
 
@@ -38,7 +33,7 @@ const SecHigh = () => {
       <div className="card-container" data-count={products.length}>
         {products.map((product, index) => (
           <div className="card" key={index}>
-            <img src={product.image} alt={product.title} />
+            <img src={product.img} alt={product.title} />
             <h3>{product.title}</h3>
             <div className="volumes">
               <span>100ml</span>
