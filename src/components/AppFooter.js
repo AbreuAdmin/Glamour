@@ -25,13 +25,13 @@ function AppFooter() {
             <nav id="copy">
                 <ul>
                     <p>Copyright &copy; 2025 Glamour Essence</p>
-                    <p>Stack for Developers:</p>
-                    <p>React + HTML5 + CSS3 + JavaScript</p>
+                    <p>Stack for Developers:<br/> React + HTML5 + CSS3 + JavaScript</p>
+                    <li><a id="dev" href="https://abrell.netlify.app" target="_blank" rel="noopener noreferrer">Developed by Abrell</a></li>
                 </ul>
             </nav>
             <nav id="navigation">
                 <ul>
-                    <li><a href="/model2"><ion-icon className="icon" name="home"></ion-icon></a></li>
+                    <li><a href="#root"><ion-icon className="icon" name="home"></ion-icon></a></li>
                     <li><a href="#favorite"><ion-icon name="heart"></ion-icon></a></li>
                     <li><a href="https://wa.me/559193405570" target="_blank" rel="noopener noreferrer"><ion-icon name="chatbubbles"></ion-icon></a></li>
                     <li><a href="https://www.instagram.com/glamo.urcosmeticss/" target="_blank" rel="noopener noreferrer"><ion-icon className="icon" name="logo-instagram"></ion-icon></a></li>
