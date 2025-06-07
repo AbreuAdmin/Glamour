@@ -1,0 +1,29 @@
+function AppHeader() {
+  return (
+    <header id="header">
+      <h1 id="logo"><a href="/"><svg width="197" height="201" viewBox="0 0 197 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fillRule="evenodd" clipRule="evenodd" d="M196.926 73.3833C194.087 63.3693 189.632 53.6251 183.492 44.5215C152.486 -1.44693 90.2329 -13.6758 44.4464 17.2076C-1.34012 48.0909 -13.3219 110.392 17.6841 156.36C47.641 200.773 106.766 213.691 152.027 186.661C152.509 186.373 152.999 186.059 153.496 185.741C155.961 184.159 158.578 182.481 161.203 183.415C163.273 184.152 163.992 186.454 164.597 188.389L164.598 188.392C164.76 188.909 164.913 189.4 165.082 189.827C165.985 192.117 169.084 190.36 170.886 188.669C175.729 184.122 181.176 174.275 180.261 164.018C179.67 160.01 178.982 156.44 178.227 153.347C178.129 152.654 177.997 151.964 177.831 151.279C158.072 75.3158 119.434 110.277 110.165 132.91C109.204 135.258 108.025 138.025 106.582 140.388C102.819 147.029 97.7407 151.114 92.1485 151.144C82.1537 151.197 73.7693 138.277 71.5908 120.899C69.7026 112.403 70.364 99.0854 73.8998 84.668C79.6054 61.4027 90.635 44.0832 98.535 45.9839C102.291 46.8877 104.664 51.9741 105.506 59.5623C105.898 61.8082 106.185 64.2774 106.358 66.9239C106.593 68.3863 106.795 69.9611 106.961 71.6504C110.446 97.9097 131.124 88.3491 152.413 78.506C169.899 70.4213 187.797 62.1459 196.92 73.3715C196.922 73.3749 196.925 73.379 196.926 73.3833ZM147.628 139.556C151.348 137.047 152.322 131.985 149.802 128.25C147.283 124.515 142.225 123.521 138.505 126.031C134.785 128.54 133.811 133.602 136.331 137.337C138.85 141.072 143.908 142.065 147.628 139.556Z" fill="" />
+      </svg>Glamour</a></h1>
+      <button id="open-menu"><ion-icon name="menu"></ion-icon></button>
+      <nav id="menu">
+        <ul>
+          <button id="close-menu"><ion-icon name="close"></ion-icon></button>
+          <li><a href="#root">HOME</a></li>
+          <li><a href="#favorite">FAVORITOS</a></li>
+          <li><a href="#body">CORPO</a></li>
+          <li><a href="#gloss">GLOSS</a></li>
+          <li><a href="#hairs">CABELOS</a></li>
+          <li><a href="#makes">MAQUIAGENS</a></li>
+          <li><a href="#skincare">SKINCARE</a></li>
+          <li><a id="whatsapp" href="https://wa.me/559193405570" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-whatsapp"></ion-icon>WHATSAPP</a></li>
+        </ul>
+      </nav>
+        <label id="theme">
+          <button className="light"><ion-icon name="sunny"></ion-icon></button>
+          <button className="dark"><ion-icon name="moon"></ion-icon></button>
+        </label>
+    </header>
+  );
+}
+
+export default AppHeader;
