@@ -1,41 +1,21 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import React, { createContext, useState, useEffect } from "react";
+import { isAuthenticated } from "../services/authService";
 
-const AuthContext = createContext(null);
+export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [token, setToken] = useState(null);
+  const [auth, setAuth] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const storedToken = localStorage.getItem('adminToken');
-    if (storedToken) {
-      setToken(storedToken);
-      setIsAuthenticated(true); // Lembrar de adicionar uma validação de token aqui (chamada à API)
-    }
+    const loggedIn = isAuthenticated();
+    setAuth(loggedIn);
+    setLoading(false);
   }, []);
 
-  const login = (newToken) => {
-    localStorage.setItem('adminToken', newToken);
-    setToken(newToken);
-    setIsAuthenticated(true);
-  };
-
-  const logout = () => {
-    localStorage.removeItem('adminToken');
-    setToken(null);
-    setIsAuthenticated(false);
-  };
-
-  const value = {
-    isAuthenticated,
-    token,
-    login,
-    logout,
-  };
-
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
-};
-
-export const useAuth = () => {
-  return useContext(AuthContext);
+  return (
+    <AuthContext.Provider value={{ auth, setAuth, loading }}>
+      {!loading ? children : <div>Carregando...</div>}
+    </AuthContext.Provider>
+  );
 };

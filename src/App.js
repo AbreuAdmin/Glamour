@@ -1,26 +1,30 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AdminLoginPage from "./pages/AdminLoginPage";
-import HomePage from "./pages/HomePage";
-import DashboardPage from "./pages/DashboardPage";
-import PrivateRoute from "./components/PrivateRoute";
-import "./style/App.scss";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
+import ProductDetails from "./pages/ProductDetails";
+import PrivateRoute from "./routes/PrivateRoute";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/admin-login" element={<AdminLoginPage />} />
-
-        <Route
-          path="/dashboard"
-          element={
-            <PrivateRoute>
-              <DashboardPage />
-            </PrivateRoute>
-          }
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={
+          <PrivateRoute>
+            <Register />
+          </PrivateRoute>
+        } />
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/dashboard" element={
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        } />
+        <Route path="*" element={<div>404 - Página não encontrada</div>} />
       </Routes>
     </Router>
   );

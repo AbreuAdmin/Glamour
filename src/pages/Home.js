@@ -1,9 +1,10 @@
+import React from "react";
 import AppHeader from "../components/AppHeader";
 import AppMain from "../components/AppMain";
 import AppFooter from "../components/AppFooter";
 import AppScript from "../components/AppScript";
 
-function HomePage() {
+const Home = () => {
   return (
   <>
     <div id="boxContent">
@@ -16,4 +17,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Home;
