@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import ProductDetails from "./pages/ProductDetails";
+import NotFound from "./pages/NotFound";
 import PrivateRoute from "./routes/PrivateRoute";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
             <Dashboard />
           </PrivateRoute>
         } />
-        <Route path="*" element={<div>404 - Página não encontrada</div>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

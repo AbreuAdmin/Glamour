@@ -15,6 +15,6 @@ const Home = () => {
     <AppScript />
   </>
   );
-}
+};
 
 export default Home;

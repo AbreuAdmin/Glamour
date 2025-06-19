@@ -23,8 +23,8 @@ const Register = () => {
   };
 
   return (
-    <div>
-      <h2>Registrar</h2>
+    <section className="register">
+      <h2>Registrar Novo Admin</h2>
       <form onSubmit={handleRegister}>
         <input 
           type="text" 
@@ -52,7 +52,7 @@ const Register = () => {
         />
         <button type="submit">Registrar</button>
       </form>
-    </div>
+    </section>
   );
 };
 

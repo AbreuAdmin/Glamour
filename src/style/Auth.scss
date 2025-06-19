@@ -1,61 +1,38 @@
-.auth {
+.login, .register {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 0 6rem;
   background: var(--footer);
   color: var(--icon);
+  gap: 1.5rem;
 
-  #register {
-    width: 50%;
-    height: 75%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem 5rem;
-    gap: 2rem;
-    border-radius: 2rem 0 0 2rem;
-    background: var(--nave);
-  }
-  
-  #login {
-    width: 50%;
-    height: 75%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem 5rem;
-    gap: 2rem;
-    border-radius: 0 2rem 2rem 0;
-    background: var(--nave);
-  }
-  
   h2 {
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
   }
-  
+
   form {
-    width: 100%;
+    width: 60%;
     max-height: fit-content;
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
-    
+    gap: 2rem;
+
     label {
       font-size: 1.5rem;
       font-weight: 600;
     }
-    
+
     input {
       width: 100%;
       padding: 1rem;
       font-size: 1.3rem;
-      background: var(--footer);
+      background: var(--nave);
       color: var(--icon);
       border: none;
       border-radius: 2rem;
@@ -69,7 +46,6 @@
       background: var(--icon);
       border: none;
       border-radius: 2rem;
-      margin-top: 1.5rem;
       color: var(--footer);
     }
 

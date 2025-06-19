@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import { isAuthenticated } from "../services/authService";
+import Loading from "../pages/Loading";
 
 export const AuthContext = createContext();
 
@@ -15,7 +16,7 @@ export const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider value={{ auth, setAuth, loading }}>
-      {!loading ? children : <div>Carregando...</div>}
+      {!loading ? children : <Loading />}
     </AuthContext.Provider>
   );
 };
