@@ -83,7 +83,7 @@ const SecMake = () => {
           {items.map((item, index) => (
             <div className="card" key={index}>
               <div className="tag">{item.tag}</div>
-              <img src={item.img} alt={item.title} className="img" />
+              <img src={item.img} alt={item.title} loading="lazy" className="img" />
               <h4 className="title">{item.title}</h4>
               <span className="description">{item.description}</span>
             </div>

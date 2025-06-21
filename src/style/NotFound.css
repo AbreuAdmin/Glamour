@@ -12,14 +12,11 @@
   box-sizing: border-box;
 }
 
-/* Importar fonte do Google Fonts (adicione no seu index.html ou no topo do CSS) */
-/* @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap'); */
-
 .not-found-title {
   font-size: 5em;
   margin-bottom: 20px;
   position: relative;
-  line-height: 1; /* Para evitar espaçamento extra */
+  line-height: 1;
 }
 
 .not-found-title .glitch {
